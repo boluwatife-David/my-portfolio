@@ -1,5 +1,4 @@
 import React from "react";
-
 export default function HeaderRoot() {
     return (
         <div>
@@ -8,8 +7,8 @@ export default function HeaderRoot() {
              <p>I am NUMB.</p>
              <div>
                 <p>This is the third line </p>
-                <botton className="white-btn"></botton>
-                <botton className="blue-btn"></botton>
+                <button className="white-btn">Email</button>
+                <button className="blue-btn">Linkedin</button>
              </div>
         </div>
     )

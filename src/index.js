@@ -1,6 +1,5 @@
 import React from "react";
-import  ReactDOM from "react";
+import  ReactDOM from "react-dom";
 import "../src/components/styles/style.css"
-import HeaderRoot from "./header"
-
-ReactDOM.render(<HeaderRoot />, document.getElementById("root"))
+import App from "./app";
+ReactDOM.render(<App />, document.getElementById("root"))
