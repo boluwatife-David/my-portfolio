@@ -1,7 +1,7 @@
 import React from "react";
-import ContentRoot from "./content";
-import HeaderRoot from "./header";
-import FooterRoot from "./footer";
+import ContentRoot from "./components/content";
+import HeaderRoot from "./components/header";
+import FooterRoot from "./components/footer";
 export default function App () {
     return (
         <div>
