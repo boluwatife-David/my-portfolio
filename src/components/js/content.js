@@ -1,6 +1,5 @@
 import React from "react";
-import logo from "./images/logo192.png"
- export default function ContentRoot(Prop) {
+ export default function ContentRoot(props) {
     const date = new Date ()
     const hours = date.getHours() 
     let timeOfDay
@@ -13,14 +12,14 @@ import logo from "./images/logo192.png"
     }
     return (
         <div className="my-projects">
-            <img src={logo} className="project-img" alt="projectimage"/>
+            <img src={props.img} className="project-img" alt="projectimage"/>
             <div className="project-info">
-            <h3 className="project-header">{Prop.name}</h3>
-            <p>{Prop.about}</p>
-            <p>it was uploaded {timeOfDay} by: {Prop.email} </p>
+            <h3 className="project-header">{props.name}</h3>
+            <p>{props.about}</p>
+            <p>it was uploaded {timeOfDay} by: {props.email} </p>
             </div>
-            
-       </div>
+         </div>
        
     )
- }
+ }  
+ 

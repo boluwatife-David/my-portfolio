@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/style.css"
+import "../styles/style.css"
 import { FaEnvelope } from "react-icons/fa";
 import { FaArrowRight  } from "react-icons/fa";
 import { FaRegMehRollingEyes  } from "react-icons/fa";
@@ -9,7 +9,6 @@ export default function HeaderRoot() {
     const me = " I am NUMB."
     return (
         <div className="img-header">
-             <img/>
              <h1 className="header"><FaRegMehRollingEyes /></h1>
              <h1 className="header"><span>{welcomeUser} {me}</span></h1>
              <p className="numbel"> <span className="lol">lol...</span></p>
