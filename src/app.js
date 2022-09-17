@@ -15,13 +15,9 @@ export default function App () {
     return (
         <div>
             <HeaderRoot />
-            <div className="project-list">
+            {/* <div className="project-list">
                {projectprop}
-               {projectprop}
-               {projectprop}
-               {projectprop}
-               {projectprop}
-            </div>
+            </div> */}
             <FooterRoot />
         </div>
 
