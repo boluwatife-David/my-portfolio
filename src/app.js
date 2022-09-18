@@ -15,16 +15,18 @@ const [lightTheme, setLightTheme] = React.useState(false)
    })
 
     return (
-        <div className={lightTheme ? "light-mode" : "body"} >
-            <nav className="theme-btn">
-                <button className="lightmode-btn" onClick={() => setLightTheme(prevTheme => !prevTheme)} >light</button>
+        <div className={lightTheme ? "light-mode" : "dark-mode"} >
+            <nav>
+                <div >
+                    <button className="lightmode-btn"  onClick={() => setLightTheme(prevTheme => !prevTheme)} ></button>
+                </div>
             </nav>
             {/* <div className="project-list">
                {projectprop}
             </div> */}
             <div className="content" >
-            <HeaderRoot />
-            <FooterRoot />
+                <HeaderRoot />
+                <FooterRoot />
             </div>
             
         </div>

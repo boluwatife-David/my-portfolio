@@ -11,23 +11,37 @@
 
 html, body {
   width: 100%;
-  height: 100vh;
-}
-
-html {
-  display: table;
-  margin: auto;
+  height: 100%;
 }
 
 body {
-  display: table-cell;
-  vertical-align: middle;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+  height: 100%;
+}
+
+.app::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.dark-mode {
   background-color: var(--dark-background);
   color: var(--dark-textcolor);
+  height: -webkit-fill-available;
+}
+.dark-mode .footer {
+  background-color: var(--dark-background);
 }
 
 .light-mode {
   background-color: var(--light-background);
+  height: -webkit-fill-available;
   color: var(--light-textcolor);
 }
 .light-mode .footer {
@@ -46,6 +60,12 @@ body {
 
 .emoji:hover {
   transform: scale(1.2);
+}
+
+.content {
+  height: 100%;
+  padding: 0;
+  width: 100%;
 }
 
 .img-header {
@@ -295,4 +315,10 @@ body {
 
 .footer-icon:hover {
   transform: scale(1.4);
+}
+
+.footer::after {
+  content: "";
+  clear: both;
+  display: table;
 }/*# sourceMappingURL=style.css.map */

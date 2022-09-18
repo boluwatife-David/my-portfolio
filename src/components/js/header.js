@@ -5,7 +5,7 @@ import { FaArrowRight  } from "react-icons/fa";
 import { FaRegMehRollingEyes  } from "react-icons/fa";
 import { FaRegGrinBeam  } from "react-icons/fa";
 export default function HeaderRoot() {
-    const welcomeUser = "HEYYY, WELCOME"
+    const welcomeUser = "HEYYY, WELCOME."
     const me = " I am NUMB."
 
     return (
