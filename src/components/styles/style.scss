@@ -1,8 +1,15 @@
+:root {
+    --dark-textcolor: #ffffff;
+    --dark-background:   rgb(27, 25, 25);
+    --light-textcolor: #000000;
+    --light-background: #ffffff;
+}
+
 *{
     margin: 0;
 }
 html, body {
-    color: white;
+    color: var(--dark-textcolor);
     background-color: rgb(27, 25, 25);
     width: 100%;
     height: 100vh;
@@ -14,6 +21,7 @@ html {
 body {
     display: table-cell;
     vertical-align: middle;
+    background-color: var(--dark-background);
 }
 .header {
     letter-spacing: 9px;
@@ -42,7 +50,7 @@ body {
     height: 50px;
     border: none;
     outline: none;
-    color: #fff;
+    color: var(--dark-textcolor);
     background: #111;
     cursor: pointer;
     position: relative;
@@ -51,7 +59,7 @@ body {
 }
 .white-btn:before {
     content: '';
-    background: linear-gradient(45deg, #968888, #dbbda5, #fffb00, #85a579, #60968d, #6473bd, #745d8c, #b896b1, #ff0000);
+    background: linear-gradient(45deg, #645e5e, #887e76);
     position: absolute;
     top: -2px;
     left:-2px;
@@ -110,7 +118,7 @@ body {
 }
 .projects-btn:before {
     content: '';
-    background: linear-gradient(45deg, #7498b9, #416e74, #49757e, #293488, #4778bd, #6473bd, #6c74b1, #9e91bd, #ff0000);
+    background: linear-gradient(45deg, #645e5e, #887e76);
     position: absolute;
     top: -2px;
     left:-2px;
@@ -190,6 +198,7 @@ body {
 
 
 
+
 .project-info {
     padding-left: 5px;
     box-sizing: border-box;
@@ -199,6 +208,26 @@ body {
 
 }
 
+.lightmode-btn {
+    border-radius: 50%;
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    border: none;
+    cursor: pointer;
+    animation: glowing 20s linear infinite;
+    background: transparent;
+    height: 30px;
+    width: 30px;
+    z-index: 0;
+    outline: none;
+    background-color: var(--light-background);
+    box-shadow: 2px 10px 5px rgba(0,0,0.6);
+    transition: all .3s ease-in-out;
+}
+.lightmode-btn:hover {
+    transform: scale(1.2);
+}
 
 
 

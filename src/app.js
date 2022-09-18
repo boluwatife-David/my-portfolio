@@ -5,7 +5,7 @@ import HeaderRoot from "./components/js/header";
 import projectprops from "./components/js/projectprops";
 import FooterRoot from "./components/js/footer";
 export default function App () {
-   const projectprop = projectprops.map(myproject => {
+    const projectprop = projectprops.map(myproject => {
       return <ContentRoot img={myproject.img} 
       name={myproject.name}
       about={myproject.about}
@@ -13,7 +13,7 @@ export default function App () {
    })
 
     return (
-        <div>
+        <div className="portfolio">
             <HeaderRoot />
             {/* <div className="project-list">
                {projectprop}

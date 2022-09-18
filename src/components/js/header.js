@@ -4,11 +4,13 @@ import { FaEnvelope } from "react-icons/fa";
 import { FaArrowRight  } from "react-icons/fa";
 import { FaRegMehRollingEyes  } from "react-icons/fa";
 import { FaRegGrinBeam  } from "react-icons/fa";
+import LightMode from "./LightMode"
 export default function HeaderRoot() {
     const welcomeUser = "HEYYY, WELCOME"
     const me = " I am NUMB."
     return (
         <div className="img-header">
+            <p><LightMode /></p>
              <h1 className="header"><FaRegMehRollingEyes /></h1>
              <h1 className="header"><span>{welcomeUser} {me}</span></h1>
              <p className="numbel"> <span className="lol">lol...</span></p>
