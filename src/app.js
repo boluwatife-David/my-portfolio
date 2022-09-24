@@ -6,6 +6,9 @@ import FooterRoot from "./components/js/footer";
 export default function App () {
 const [lightTheme, setLightTheme] = React.useState(false)
 
+function toggleClicked () {
+    return  setLightTheme(prevTheme => !prevTheme)
+}
 
     const projectprop = projectprops.map(myproject => {
       return <ContentRoot img={myproject.img} 
@@ -18,7 +21,7 @@ const [lightTheme, setLightTheme] = React.useState(false)
         <div className={lightTheme ? "light-mode" : "dark-mode"} >
             <nav>
                 <div >
-                    <button className="lightmode-btn"  onClick={() => setLightTheme(prevTheme => !prevTheme)} ></button>
+                    <button className="lightmode-btn"  onClick={toggleClicked} >i</button>
                 </div>
             </nav>
             {/* <div className="project-list">
